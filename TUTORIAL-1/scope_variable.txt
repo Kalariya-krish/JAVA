@@ -1,0 +1,17 @@
+class scope_variable
+{
+int a = 10;
+void sum()
+{
+int b = 20;
+System.out.println("Local variable of print method :- "+b);
+System.out.println("Global variable :- "+a);
+}
+public static void main(String[] args)
+{
+int i = 90;
+System.out.println("Variable of main method :- "+i);
+scope_variable t = new scope_variable();
+t.print();
+}
+}
